@@ -1,12 +1,12 @@
 <div class="customers">
   <div>
-      <h3> <%= customer.full_name  %></h3>
+      <h2 class="subtitle is-2"> <%= customer.full_name  %></h3>
       <% if customer.image.present? %>
         <%= image_tag customer.image %>
       <% end %>
       <%# <%= image_tag(customer.image,size: "212x219") %>
-      <p><%= customer.phone_number %></p>
-      <p><%= customer.email %></p>
+      <p class="subtitle is-4"><%= customer.phone_number %></p>
+      <p class="subtitle is-4"><%= customer.email %></p>
   </div>
 
 </div>
