@@ -1,5 +1,7 @@
 # frozen_string_literal: true
 
 class Customer < ApplicationRecord
-  validates :fullname, presence: true, uniqueness: true
+  validates :full_name, presence: true, uniqueness: true
+
+  has_one_attached :image
 end
