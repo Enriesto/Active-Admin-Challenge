@@ -1,3 +1,7 @@
 <h1 class="title is-1">All Customers</h1>
-<div><%= link_to "Alphabetized", customers_alphabetized_path %> | <%= link_to "Customers Missing Email", customers_missing_email_path %></div>
+<div class="columns is-multiline">
+<div>
+  <%= link_to "Alphabetized", customers_alphabetized_path %> | <%= link_to "Customers Missing Email", customers_missing_email_path %>
+</div>
 <%= render partial:"customer", collection: @customers %>
+</div>
